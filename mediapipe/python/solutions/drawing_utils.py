@@ -193,6 +193,7 @@ def draw_landmarks(
       # Fill color into the circle
       cv2.circle(image, landmark_px, drawing_spec.circle_radius,
                  drawing_spec.color, drawing_spec.thickness)
+  return idx_to_coordinates
 
 
 def draw_axis(image: np.ndarray,
